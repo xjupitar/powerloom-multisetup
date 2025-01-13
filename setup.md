@@ -45,7 +45,7 @@ Inside the nano editor, add the following lines at the end of the file:
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"</code></pre>
 To save the nano file, use CTRL+X and then hit enter. <br>
-Refresh the terminal by typing:
+Refresh the terminal using following command:
 <pre><code>source ~/.bashrc</code></pre>
 Next, proceed to install Python 3.11.5
 <pre><code>pyenv install 3.11.5</code></pre>
