@@ -47,3 +47,30 @@ eval "$(pyenv virtualenv-init -)"</code></pre>
 To save the nano file, use CTRL+X and then hit enter.
 Refresh the terminal by typing:
 <pre><code>source ~/.bashrc</code></pre>
+Next, proceed to install Python 3.11.5
+<pre><code>pyenv install 3.11.5</code></pre>
+## Step 10: Intall pyenv virtual
+<pre><code>echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+pyenv virtualenv 3.11.5 ss_lite_multi_311
+pyenv local ss_lite_multi_311</code></pre>
+## Step 11: Setup node
+To establish a multi-node setup, fisrt create a env file using
+<pre><code>./bootstrap.sh</code></pre>
+Now please enter your Wallet holder adderss, Source RPC url, Signer address, signer address private key accordingly. <br>
+**Note: <br>
+Wallet Holder address is your slot address/node license address <br>
+Signer address is your burner address that you set in the Snapshotter dashboard.**<br>
+Now install python requirements
+<pre><code>pip install -r requirements.txt</code></pre>
+Execute the setup
+<pre><code>python multi_clone.py</code></pre>
+Do you want to deploy all slots? Type Y and hit enter <br>
+Select data market (For Aave type 1 and hit enter, for Uniswap type 2 and hit enter)<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+## Check Diagonisis 
+<pre><code>./diagnose.sh</code></pre>
