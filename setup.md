@@ -69,8 +69,17 @@ Select data market (For Aave type 1 and hit enter, for Uniswap type 2 and hit en
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-## Check Diagonisis 
+## Check Diagnose 
 <pre><code>./diagnose.sh</code></pre>
+<br>
+<br>
+<br>
+## SOME TIPS
+If you see docker deamon in not running after using diagnose, use this command
+<pre><code>sudo systemctl start docker</code></pre>
+Then use diagnose command again
+<pre><code>./diagnose.sh</code></pre>
+After that delete all derectories and screens by typing Y. <br>
+This will delete all your slots <br>
+Now start the python script again to run the node
+<pre><code>python multi_clone.py</code></pre>
