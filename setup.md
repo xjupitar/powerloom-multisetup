@@ -65,16 +65,13 @@ Now install python requirements
 Execute the setup
 <pre><code>python multi_clone.py</code></pre>
 Do you want to deploy all slots? Type Y and hit enter <br>
-Select data market (For Aave type 1 and hit enter, for Uniswap type 2 and hit enter)<br>
-<br>
-<br>
-<br>
+Select data market (For Aave type 1 and hit enter, for Uniswap type 2 and hit enter<br>
+
 ## Check Diagnose 
 <pre><code>./diagnose.sh</code></pre>
+
+## Some Tips
 <br>
-<br>
-<br>
-## SOME TIPS
 If you see docker deamon in not running after using diagnose, use this command
 <pre><code>sudo systemctl start docker</code></pre>
 Then use diagnose command again
@@ -83,3 +80,4 @@ After that delete all derectories and screens by typing Y. <br>
 This will delete all your slots <br>
 Now start the python script again to run the node
 <pre><code>python multi_clone.py</code></pre>
+Refresh your Shapshotter Dashboard to check if all slots working.
